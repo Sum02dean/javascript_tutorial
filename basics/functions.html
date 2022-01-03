@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>  
+            // Without argumnets
+            function msg(){  
+            alert("hello! this is message");  
+            }  
+            // With arguments
+            function getcube(number){  
+            alert(number*number*number);  
+            }  
+
+            function getInfo(){  
+                return "hello javatpoint! How are you?";  
+                }  
+        </script>
+
+        <script>
+            // Print the return statement to the webpage
+            document.write(getInfo());
+        </script>
+
+        <script>  
+            // Javascript function objects, notice this is still a var
+            var add=new Function("num1","num2","return num1+num2");  
+            document.writeln(add(2,5));  
+        </script>  
+
+        <script>  
+            var pow=new Function("num1","num2","return Math.pow(num1,num2)");  
+            document.writeln(pow(2,3));  
+        </script>  
+
+        <form>  
+            <input type="button" value="click" onclick="getcube(4)"/>  
+        </form>  
+            <input type="button" onclick="msg()" value="call function"/>
+    </body>
+</html>
