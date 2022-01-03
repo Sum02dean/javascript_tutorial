@@ -1,0 +1,26 @@
+<!-- This is an example of an external js use case called by src keyword arg
+
+    It helps in the reusability of code in more than one HTML file.
+    It allows easy code readability.
+    It is time-efficient as web browsers cache the external js files, which further reduces the page loading time.
+    It enables both web designers and coders to work with html and js files parallelly and separately, i.e., without facing any code conflictions.
+    The length of the code reduces as only we need to specify the location of the js file.
+    There ate some security issues as well as potential multi js scipt dependency issues.
+    If the js code is short, best to use internal JS intead. 
+
+-->
+<html>  
+    <head>  
+    <script type="text/javascript" src="message.js">
+    </script> 
+    </head>  
+
+    <body>  
+        <p>Welcome to JavaScript</p>  
+        <form>  
+        <!--Change the 'onclick' kwarg to the function specied in the script src.-->
+        <input type="button" value="click" onclick="a()"/>    
+        </form>  
+    </body>  
+</html>
+

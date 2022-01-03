@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            var x = 10;
+            var y = 20;
+            var z = x + y;
+            var write = 0;
+
+            if (write == 1){
+                document.write(z);
+            }
+
+            if (10<13){
+                var y =20; // Javascript local variable
+            }
+        
+            var data=200; // Global variable
+
+            function a(){
+                document.writeln(data);
+            }
+
+            function b(){
+                document.writeln(data);
+            }
+            
+            function n(){
+                window.value=100; // Use window.value to declare a global variable within a function.
+
+            }
+
+            function m(){
+                alert(window.value); // Accessing global varabel from another function.
+            }
+            // Call functions
+            //a();
+            //b();
+            n();
+            m();
+
+        </script> 
+
+
+    </body>
+</html>
